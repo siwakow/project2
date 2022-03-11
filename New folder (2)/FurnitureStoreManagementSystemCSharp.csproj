@@ -1,0 +1,323 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0F2039B8-9E0B-4454-8D05-5DA9C093D034}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FurnitureStoreManagementSystemCSharp</RootNamespace>
+    <AssemblyName>FurnitureStoreManagementSystemCSharp</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer.Designer.cs">
+      <DependentUpon>Customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="furnitureDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>furnitureDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="furnitureDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>furnitureDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="furnitureDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>furnitureDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="furnitureDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>furnitureDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="furnitureDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>furnitureDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="furnitureDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>furnitureDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="furnitureDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>furnitureDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Products.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Products.Designer.cs">
+      <DependentUpon>Products.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase.Designer.cs">
+      <DependentUpon>Purchase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sale.Designer.cs">
+      <DependentUpon>Sale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchProduct.Designer.cs">
+      <DependentUpon>SearchProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchPurchasedProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchPurchasedProducts.Designer.cs">
+      <DependentUpon>SearchPurchasedProducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchSalesProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchSalesProducts.Designer.cs">
+      <DependentUpon>SearchSalesProducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewCustomers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewCustomers.Designer.cs">
+      <DependentUpon>ViewCustomers.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Customer.resx">
+      <DependentUpon>Customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Products.resx">
+      <DependentUpon>Products.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase.resx">
+      <DependentUpon>Purchase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sale.resx">
+      <DependentUpon>Sale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchProduct.resx">
+      <DependentUpon>SearchProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchPurchasedProducts.resx">
+      <DependentUpon>SearchPurchasedProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchSalesProducts.resx">
+      <DependentUpon>SearchSalesProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewCustomers.resx">
+      <DependentUpon>ViewCustomers.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="furnitureDataSet.xsc">
+      <DependentUpon>furnitureDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="furnitureDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>furnitureDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="furnitureDataSet.xss">
+      <DependentUpon>furnitureDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="furnitureDataSet1.xsc">
+      <DependentUpon>furnitureDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="furnitureDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>furnitureDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="furnitureDataSet1.xss">
+      <DependentUpon>furnitureDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="furnitureDataSet2.xsc">
+      <DependentUpon>furnitureDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="furnitureDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>furnitureDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="furnitureDataSet2.xss">
+      <DependentUpon>furnitureDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="furnitureDataSet3.xsc">
+      <DependentUpon>furnitureDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="furnitureDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>furnitureDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="furnitureDataSet3.xss">
+      <DependentUpon>furnitureDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="furnitureDataSet4.xsc">
+      <DependentUpon>furnitureDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="furnitureDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>furnitureDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="furnitureDataSet4.xss">
+      <DependentUpon>furnitureDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="furnitureDataSet5.xsc">
+      <DependentUpon>furnitureDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="furnitureDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>furnitureDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="furnitureDataSet5.xss">
+      <DependentUpon>furnitureDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="furnitureDataSet6.xsc">
+      <DependentUpon>furnitureDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="furnitureDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>furnitureDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="furnitureDataSet6.xss">
+      <DependentUpon>furnitureDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="furniture.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="furniture_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>furniture.mdf</DependentUpon>
+    </Content>
+    <None Include="Resources\furniture.png" />
+    <None Include="Resources\home_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
